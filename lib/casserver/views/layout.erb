@@ -6,13 +6,18 @@
       xml:lang="en" lang="en" >
 
   <head>
-    <title><%= escape_html @organization %><%= t.label.central_login_title %></title>
-    <link rel="stylesheet" type="text/css" href="<%= escape_html @uri_path %>/themes/cas.css" />
+    <title>Hexacta - Login</title>
+    <link rel="stylesheet" type="text/css" href="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/animate.css" />
+    <!--<link rel="stylesheet" type="text/css" href="<%= escape_html @uri_path %>/cas.css" />-->
     <link rel="stylesheet" type="text/css" href="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/theme.css" />
     <link rel="icon" type="image/png" href="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/favicon.png" />
+    <script src="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/jquery-2.1.1.js"></script>
+    <script src="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<%= escape_html @uri_path %>/themes/<%= escape_html @theme %>/login.js"></script>
   </head>
 
-  <body onload="if (document.getElementById('username')) document.getElementById('username').focus()">
+  <body class="login" onload="if (document.getElementById('username')) document.getElementById('username').focus()">
     <%= yield %>
   </body>
 </html>

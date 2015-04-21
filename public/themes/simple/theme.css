@@ -1,28 +1,105 @@
+@font-face {font-family: Whitney; src: url(../fonts/Whitney-Medium.otf);}
+
 body {
-  background-image: url(bg.png);
+  font-family: Whitney;
+  background-color: #e9eaed;
 }
 
-#headline-container {
-  margin-bottom: 5px;
+.login {
+  background-color: rgb(30, 166, 156) !Important;
 }
 
-#login-box {
+.login-container {
+  padding: 12% 0 0;
+}
+
+.hexacta-logo {
   margin: 0 auto;
-  width: 450px;
-  top: 110px;
+  background-image: url(../simple/site-login-logo.png);
+  width: 300px;
+  height: 70px;
+  background-size: 300px 70px;
+}
+
+.login form {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 24px 20px;
+  font-weight: 400;
+  overflow: visible;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
   position: relative;
 }
 
-#login-form {
-  background-color: #fff;
-  border: 1px #aaa solid;
+.login form label{
+  color: rgb(119, 119, 119);
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-#logo-container {
-  vertical-align: middle;
+
+.login form .button {
+  float: right;
+  margin-top: 20px;
 }
 
-#logo {
-    width: 128px;
-    height: 128px;
+.login form {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.login form .user {
+  position: absolute;
+  left: 30%;
+  top: -40px;
+}
+
+.user {
+  height: 75px;
+  width: 75px;
+  border-radius: 100px;
+  box-shadow: 0px 1px 5px rgb(204, 204, 204);
+  border: 0px;
+  margin: 0px 10px;
+}
+
+#login-submit {
+  margin-top:10px;
+  float:right;
+}
+
+/*******Message box********/
+
+#messagebox-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+}
+
+div.messagebox {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+div.mistake {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+div.confirmation {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+div.notice {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
 }
